@@ -11,6 +11,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <!-- Vue.js -->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="js/cookie.js"></script>
   <style>
     img {
       max-width: 100%;
@@ -28,6 +29,8 @@
       </ul>
     </nav>
     <div class="container mt-4">
+      <button onclick="getProfile()" class="btn btn-primary">getProfile</button>
+      <button onclick="checkLoginState()" class="btn btn-primary">checkLoginState</button>
       <button v-on:click="getPostList()" class="btn btn-primary">받아오기</button>
       <!-- Grid Base선언 (row) -->
       <div class="row">
@@ -53,5 +56,6 @@
     </div>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/facebook.js"></script>
 </body>
 </html>
